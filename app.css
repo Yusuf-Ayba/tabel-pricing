@@ -5,4 +5,115 @@ html {
 
 body {
     background-color: #57A2FB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.panel {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px 25px;
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.pricing-plane {
+    border-bottom: 1px solid #9dd1ff;
+}
+
+.pricing.plane:last-child {
+    border-bottom: none;
+}
+
+.img-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 12rem;
+    height: 12rem;
+}
+
+.pricing-img {
+    margin-bottom: 25px;
+    max-width: 100%;
+}
+
+.pricing-header {
+    color: #888;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.pricing-features {
+    margin: 50px 0 25px;
+    color: #016ff9;
+}
+
+.pricing-features-item {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 15px;
+    border-top: 1px solid #57A2FB;
+}
+
+.pricing-features-item:last-child {
+    border-bottom: 1px solid #57A2FB;
+}
+
+.pricing-price {
+    color: #016ff9;
+    display: block;
+    font-size: 32px;
+    font-weight: 700px;
+}
+
+.pricing-buttom {
+    color: #016ff9;
+    border: 1px solid #9dd1ff;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 15px 35px;
+    text-decoration: none;
+    margin: 25px 0;
+}
+
+.pricing-buttom:hover,
+.pricing-buttom:focus {
+    background-color: #005197;
+    color: white;
+}
+
+.pricing-buttom.is-featured {
+    border: 1px solid #9dd1ff;
+    background-color: #48aaff;
+    color: white;
+}
+
+.pricing-buttom.is-featured:hover,
+.pricing-buttom.is-featured:focus {
+    background-color: #005197;
+    color: white;
+}
+
+@media (min-widht: 900px) {
+    .panel {
+        flex-direction: row;
+    }
+
+    .pricing.panel {
+        border-bottom: none;
+        border-right: 1px solid #9dd1ff;
+        padding: 25px 50px;
+    }
+
+    .pricing-plane:last-child {
+        border-right: none;
+    }
 }
