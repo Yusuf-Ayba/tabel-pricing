@@ -23,11 +23,11 @@ body {
     text-transform: uppercase;
 }
 
-.pricing-plane {
+.pricing-plan {
     border-bottom: 1px solid #9dd1ff;
 }
 
-.pricing.plane:last-child {
+.pricing-plan:last-child {
     border-bottom: none;
 }
 
@@ -107,13 +107,13 @@ body {
         flex-direction: row;
     }
 
-    .pricing.panel {
+    .pricing-plan {
         border-bottom: none;
         border-right: 1px solid #9dd1ff;
         padding: 25px 50px;
     }
 
-    .pricing-plane:last-child {
+    .pricing-plan:last-child {
         border-right: none;
     }
 }
